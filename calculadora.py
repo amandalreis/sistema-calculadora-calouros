@@ -45,7 +45,7 @@ def realizar_soma():
 
     soma = 0
 
-    for i in range(quantidade_numeros_a_somar):
+    for i in range(0, quantidade_numeros_a_somar):
         numero = float(input(f"Digite o {i + 1}º número: "))
         soma += numero
     
@@ -76,7 +76,7 @@ def realizar_multiplicacao():
 
     multiplicacao = 1
 
-    for i in range(quantidade_numeros_a_multiplicar):
+    for i in range(0, quantidade_numeros_a_multiplicar):
         numero = float(input(f"Digite o {i + 1}º número: "))
         multiplicacao *= numero
     
