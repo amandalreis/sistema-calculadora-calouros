@@ -90,11 +90,15 @@ def realizar_divisao():
     primeiro_numero = float(input("Qual o número a ser dividido? "))
     segundo_numero = float(input("Qual o número que deve dividir o primeiro número informado? "))
 
-    divisao = primeiro_numero / segundo_numero
+    if (segundo_numero == 0.0):
+        print("É impossível dividir um número por zero!")
+        voltar_ao_menu()
+    else:
+        divisao = primeiro_numero / segundo_numero
 
-    print(f"O resultado da divisão entre os números fornecidos é: {divisao}")
+        print(f"O resultado da divisão entre os números fornecidos é: {divisao}")
 
-    voltar_ao_menu()
+        voltar_ao_menu()
 
 def obter_resto_de_divisao():
     os.system('clear') #Para limpar o terminal, apenas por fins estéticos.
@@ -102,11 +106,15 @@ def obter_resto_de_divisao():
     primeiro_numero = float(input("Qual o número a ser dividido? "))
     segundo_numero = float(input("Qual o número que deve dividir o primeiro número informado? "))
 
-    resto = primeiro_numero % segundo_numero
+    if (segundo_numero == 0.0):
+        print("É impossível dividir um número por zero!")
+        voltar_ao_menu()
+    else:
+        resto = primeiro_numero % segundo_numero
 
-    print(f"O resto da divisão entre os números é: {resto}")
+        print(f"O resto da divisão entre os números é: {resto}")
 
-    voltar_ao_menu()
+        voltar_ao_menu()
 
 
 def calcular_porcentagem():
